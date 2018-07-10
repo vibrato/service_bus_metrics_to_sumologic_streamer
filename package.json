@@ -1,0 +1,19 @@
+{
+  "name": "service_bus_metrics_to_sumologic_streamer",
+  "version": "1.0.0",
+  "description": "Stream Azure Service Bus Metrics to Sumologic",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ntwairay/service_bus_metrics_to_sumologic_streamer.git"
+  },
+  "author": "RayNg@Vibrato",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ntwairay/service_bus_metrics_to_sumologic_streamer/issues"
+  },
+  "homepage": "https://github.com/ntwairay/service_bus_metrics_to_sumologic_streamer#readme"
+}
