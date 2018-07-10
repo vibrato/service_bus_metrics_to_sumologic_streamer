@@ -1,16 +1,15 @@
-var azure = require('azure');
+const azure = require('azure');
+const _ = require("lodash");
 
-console.log(process.env.CONNECTION_STRING)
-
-var connStr = process.env.CONNECTION_STRING;
+const connStr = process.env.CONNECTION_STRING;
+const qName = process.env.QUEUE_NAME
 if (!connStr) throw new Exception('Must provide connection string');
-var queueName = 'rngbus';
 
-console.log('Connecting to ' + connStr + ' queue ' + queueName);
-var sbService = azure.createServiceBusService(connStr);
+const sbService = azure.createServiceBusService(connStr);
 
 sbService.listQueues((error, listqueuesresult, response) => {
-   //var obj = JSON.parse(listqueuesresult[0]["QueueName"]);
-   console.log(listqueuesresult[0].QueueName)
-   console.log(listqueuesresult[0].CountDetails)
+   var filteredQueue = _.find(listqueuesresult,{QueueName: qName})
+   var result = _.assign(filteredQueue.CountDetails, { QueueName: filteredQueue.QueueName })
+   console.log(result)
+   //console.log(filteredQueue[0].QueueName)
 });
