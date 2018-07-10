@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ntwairay/service_bus_metrics_to_sumologic_streamer/issues"
   },
-  "homepage": "https://github.com/ntwairay/service_bus_metrics_to_sumologic_streamer#readme"
+  "homepage": "https://github.com/ntwairay/service_bus_metrics_to_sumologic_streamer#readme",
+  "dependencies": {
+    "azure-sb": "^0.10.6"
+  }
 }
