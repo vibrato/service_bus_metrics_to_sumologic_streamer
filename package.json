@@ -4,8 +4,8 @@
   "description": "Stream Azure Service Bus Metrics to Sumologic",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./src/index.js",
+    "test": "sh deploy.sh"
   },
   "repository": {
     "type": "git",
