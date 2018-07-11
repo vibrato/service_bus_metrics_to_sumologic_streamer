@@ -19,6 +19,7 @@
   "homepage": "https://github.com/ntwairay/service_bus_metrics_to_sumologic_streamer#readme",
   "dependencies": {
     "azure": "^2.3.1-preview",
-    "lodash": "^4.17.10"
+    "lodash": "^4.17.10",
+    "sumo-logger": "^1.5.0"
   }
 }
