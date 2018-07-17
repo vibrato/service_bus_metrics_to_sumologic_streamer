@@ -10,7 +10,7 @@ Export Service bus metrics to Sumologic
  - Azure login (Connection to your Azure subscription)
  - npm
 
-***if it is working, you should be able to see your account detail by running azure*** `az account show`
+***if the azure connection is working, you should be able to see your account detail by running azure*** `az account show`
 
 ```
 {
