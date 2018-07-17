@@ -29,6 +29,5 @@ Export Service bus metrics to Sumologic
 
 ### Steps
 
- - convert env.tpl to env.sh
- - replace "YOURVALUE" with your appropriate value
+ - convert env.tpl to env.sh and replace "YOURVALUE" with your appropriate value
  - npm test
